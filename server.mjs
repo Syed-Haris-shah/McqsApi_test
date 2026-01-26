@@ -7,6 +7,8 @@ import v1Route from "./Routes/testv1.Route.js";
 dotenv.config();
 connectDB();
 
+console.log("ENV CHECK:", process.env.MONGO_URI);
+
 const app = express();
 
 app.use(cors());
