@@ -8,6 +8,11 @@ dotenv.config();
 connectDB();
 
 console.log("ENV CHECK:", process.env.MONGO_URI);
+console.log("=== ENVIRONMENT DEBUG ===");
+console.log("TEST_VAR →", process.env.TEST_VAR);
+console.log("MONGO_URI →", process.env.MONGO_URI);
+// console.log("All env keys:", Object.keys(process.env));
+// console.log("========================");
 
 const app = express();
 
